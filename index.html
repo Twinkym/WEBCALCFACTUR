@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Factura y Asesor de Incidencias</title>
+  <style>
+    .lenguajes {
+      display: inline-flex;
+      padding: 10px;
+      background: lightcyan;
+      max-width: 25%;
+
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+
+    th {
+      background-color: aliceblue;
+    }
+
+    p {
+      color: rgb(80, 186, 221);
+      font-size: 1.4em;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header class="cabecera">
+    <div class="Logo"> <img src="" alt="Logo"></div>
+    <h1 class="TITULO">AQUI PODRAS CALCULAR TU FACTURA Y QUE PUEDE HACER PARA MEJORAR TU CONUMO</h1>
+    <nav class="Menu">Aqui hay un menu</nav>
+    <div class="lenguajes">
+      <a href="" id="IN">INGLES</a>
+      <a href="" id="FR">FRANCES</a>
+      <a href="" id="IT">ITALIANO</a>
+      <a href="" id="GR">ALEMAN</a>
+    </div>
+  </header>
+  <main class="Contenedor">
+    <h2>Esta seria la oficina virtual de Somenergia donde se encuentran las conexiones a los datos de consumo
+      particulares una vez
+      logeados, y a los cuales necesitará acceder la aplicación para su posterior tratado y resolución.</h2>
+    <img src="/IMG/CapSomenergia.png" alt="EjempSom" class="CapSomenergia" width="85%" height="300px">
+    <hr class="separador">
+    <p>En la siguiente sección fijariamos el metodo de obtención de datos tecnicos necesarios para realizar los
+      calculos para maximizar la eficiencia energetica del cliente u hogar</p>
+    <section class="a">
+      <div class="form">
+        <form action="index.php">
+          <h2 class="titulillo">Escoje tu Electrodomestico</h2>
+          <label for="suministradora"><strong>Marca: </strong></label>
+          <select name="Electricas" id="red">
+            <option value="Marca"></option>
+            <option value="Marca1">Siemens</option>
+            <option value="Marca2">LG</option>
+            <option value="Marca3">HP</option>
+            <option value="Marca4">LENOVO</option>
+          </select>
+          <br>
+          <h2 class="titulillo 1">Escoje el Modelo</h2>
+          <label for="Modelo"><strong>Modelo: </strong></label>
+          <select name="Modelo" id="Modelos">
+            <option value="Modelo1">Deskjet 6057 </option>
+            <option value="Modelo2">LENOVO thinkpad</option>
+            <option value="Modelo3">Combi2 serie 600</option>
+            <option value="Modelo4">HB537AOSO</option>
+          </select><br><br>
+          <h2>Introduce el tiempo activo</h2>
+          <label for="Tiemposervicio"><strong>Horas activo:</strong></label>
+          <input type="number" name="Tiemposervicio" id="T/S"><br><br>
+          <input type="button" value="Añadir dato">
+        </form>
+      </div>
+    </section>
+    <hr class="separador">
+    <p>En la tabla 1 obtendriamos los datos recibidos de la BBDD publica de los fabricantes, tales como Q, mediante la
+      columna T/servicio el usuario introduce con un input type number el numeros de horas por dia, asi mediante el
+      calculo de dichos valores podriamos avisar al usuario de posibles fallas ó procedimientos a seguir para una mejor
+      eficiencia y reducción de costos etc... </p>
+    <table style="width: 35%">
+      <tr>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Conumo Nominal</th>
+        <th>T/servicio</th>
+      </tr>
+      <tr>
+        <td> idMarca </td>
+        <td>idModelo</td>
+        <td>Q(constante que indica el consumo nominal ó caudal)</td>
+        <td>Horas de actividad del Electrodomestico</td>
+      </tr>
+      <tr>
+        <td>idMarca</td>
+        <td>idModelo</td>
+        <td>Q</td>
+        <td>Lo mismo que arriba</td>
+      </tr>
+    </table>
+    <hr>
+    <table>
+      <tr>
+        <th>Consumo/día * T/servicio</th>
+        <th>Valor</th>
+        <th>Consumo Esperado</th>
+
+
+
+      </tr>
+    </table>
+    <hr class="separador">
+
+
+  </main>
+</body>
+
+</html>
